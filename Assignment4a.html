@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        body{
+            background-color:cadetblue;
+        }
+        #box{
+            height: 400px;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+        }
+        .content{
+            border: 2px solid red;
+            background-color: tomato;
+            color: white;
+            width: 200px;
+            height: 300px;
+        }
+        #box_column{
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .content_column{
+            border: 2px solid red;
+            background-color: tomato;
+            color: white;
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header style = "text-align: center;color:green;font-size:xx-large;font-weight:bolder">Box Model</header><br><hr><br>
+    <div style = "text-align: center;color: blueviolet;font-size:x-large;font-weight:bolder;">Row Order</div><br>
+    <div id = "box">
+        <div class = "content">This is box 1</div>
+        <div class = "content">This is box 2</div>
+        <div class = "content">This is box 3</div>
+        <div class = "content">This is box 4</div>
+        <div class = "content">This is box 5</div>
+        <div class = "content">This is box 6</div>
+    </div>
+    <br><hr><br>
+    <div style = "text-align: center;color: blueviolet;font-size:x-large;font-weight:bolder;">Column Order</div><br>
+    <div id = "box_column">
+        <div class = "content_column">This is box 1</div>
+        <div class = "content_column">This is box 2</div>
+        <div class = "content_column">This is box 3</div>
+        <div class = "content_column">This is box 4</div>
+        <div class = "content_column">This is box 5</div>
+        <div class = "content_column">This is box 6</div>
+    </div>
+</body>
+</html>
