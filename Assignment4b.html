@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex with images</title>
+    <style>
+        #header_main{
+            font-size: xx-large;
+            font-weight: bolder;
+            color: rgb(243, 136, 14);
+        }
+        .sub_header{
+            font-size: x-large;
+            font-weight: bolder;
+            color: rgb(45, 240, 6);
+        }
+        #main_content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header id = "header_main">Flex Using Images</header><br><hr><br>
+    <div id = "main_content">
+        <div class = "content">
+            <header class = "sub_header">Sharks</header>
+            <a href = "https://en.wikipedia.org/wiki/Great_white_shark"><img src = "C:\Users\HP\Desktop\WEB\White_shark.jpg" width = 250px height = 250px></a>
+            <a href = "https://en.wikipedia.org/wiki/Tiger_shark"><img src = "C:\Users\HP\Desktop\WEB\1200px-Tiger_shark.jpg" width = 250px height = 250px></a>
+            <a href = "https://en.wikipedia.org/wiki/Hammerhead_shark"><img src = "C:\Users\HP\Desktop\WEB\structures-hammerheads-Sharks-electroreceptors-skin-discharges-role.jpg" width = 250px height = 250px></a>
+        </div>
+        <div class = "content">
+            <header class = "sub_header">Mammals</header>
+            <a href = "https://en.wikipedia.org/wiki/Elephant"><img src = "C:\Users\HP\Desktop\WEB\3v49raxlb8_WW187785.jpg" width = 250px height = 250px></a>
+            <a href = "https://en.wikipedia.org/wiki/Tiger"><img src = "C:\Users\HP\Desktop\WEB\download.jfif" width = 250px height = 250px></a>
+            <a href = "https://en.wikipedia.org/wiki/Monkey"><img src = "C:\Users\HP\Desktop\WEB\Bonnet_macaque_(Macaca_radiata)_Photograph_By_Shantanu_Kuveskar.jpg" width = 250px height = 250px></a>
+        </div>
+        <div class = "content">
+            <header class = "sub_header">Birds</header>
+            <a href = "https://en.wikipedia.org/wiki/Eagle"><img src = "C:\Users\HP\Desktop\WEB\Águila_calva.jpg" width = 250px height = 250px></a>
+            <a href = "https://en.wikipedia.org/wiki/Kingfisher"><img src = "C:\Users\HP\Desktop\WEB\download (1).jfif" width = 250px height = 250px></a>
+            <a href = "https://en.wikipedia.org/wiki/House_sparrow"><img src = "C:\Users\HP\Desktop\WEB\House_Sparrow_mar08.jpg" width = 250px height = 250px></a>
+        </div>
+    </div>
+</body>
+</html>
