@@ -1,0 +1,72 @@
+[5:20 PM, 11/29/2021] NIT P ANAND A2: <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form validation</title>
+    <link rel="stylesheet" href="formValidate.css">
+</head>
+<script src="formValidate.js"></script>
+
+<body>
+    <h1>Display: </h1>
+    <div>
+        <form name="validation" action="" onsubmit="return validateform()">
+            <p>
+                First Name: <input type="text" name="name" placeholder="First name" required>
+            </p>
+            <p>
+                Address: <input type="text" name="address" placeholder="Address" required>
+            </p>
+            <p>
+                Zip Code: <input type="text" name="zipcode" placeholder="Zipcode" required>
+            </p>
+            <p>
+                State:
+                <select type="text" value="" name="select" required>
+                    <option>Select your state</option>
+                    <option>Bihar</option>
+                    <option>West Bengal</option>
+                    <option>Karnataka</option>
+                    <option>Rajasthan</option>
+                    <option>Madhya Pradesh</option>
+                </select>
+
+            </p>
+            <p>
+                Username(6-8 characters): <input type="text" name="username" placeholder="Username" required>
+            </p>
+            <p>
+                Email: <input type="text" name="email" placeholder="Email address" required>
+            </p>
+            <p class="button">
+                <input type="submit" value="Check Form" name="checkform">
+            </p>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
+[5:21 PM, 11/29/2021] ANUBHAV KAMBOJ: bas ye hi likhna h?
+[5:21 PM, 11/29/2021] NIT P ANAND A2: function validateform() {
+    var zipcode = document.validation.zipcode.value;
+    var username = document.validation.username.value;
+    var email = document.validation.email.value;
+
+    regexp = /^[1-9][0-9]{5}$/;
+
+    if (!regexp.test(zipcode)) {
+        window.alert("Enter correct zipcode");
+        return false;
+    }
+    if (username.length != 6 && username.length != 7 && username.length != 8) {
+        window.alert("Enter correct username");
+        return false;
+    }
+    if (!/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(email)) {
+        window.alert("Enter correct email address");
+        return false;
+    }
+    return true;
+}
