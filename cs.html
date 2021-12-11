@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<style>
+    .superclass{
+        background-color: transparent;
+        width: 100px;
+        height: 200px;
+        border: 1px solid red;
+        perspective: 75px;
+    }
+    .subclass{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .flip1:hover{
+        transform: rotateY('180 deg');
+    }
+    .flip-front{
+        background-color: cyan;
+        color: yellow;
+    }
+    .flip-back{
+        background-color: rgb(219, 196, 152);
+        color: blue;
+        transform: rotate(180 deg);
+    }
+</style>
+<body>
+    <div class="superclass">
+        <div class="subclass">
+            <div class="flip-front">
+                <img src="C:\Users\ANUBHAV KAMBOJ\Desktop\ISRO.gif">
+            </div>
+            <div class="flip-back">
+                <h2>FLIPPED</h2>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
